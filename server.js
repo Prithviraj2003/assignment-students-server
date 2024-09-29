@@ -113,7 +113,7 @@ app.post("/login", (req, res) => {
   console.log(req.body);
   const { username, password } = req.body;
   if (username === superAdmin.name && password === superAdmin.password) {
-    res.send({name:superAdmin.name});
+    res.send({ name: superAdmin.name });
   } else {
     const teacher = teachers.find(
       (teacher) => teacher.name === username && teacher.password === password
@@ -125,7 +125,7 @@ app.post("/login", (req, res) => {
         (student) => student.name === username && student.password === password
       );
       if (student) {
-        res.send({ student: student.name, marks: student.marks });
+        res.send({ name: student.name, student: true });
       } else {
         res.send("Invalid username or password");
       }
