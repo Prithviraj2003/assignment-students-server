@@ -22,19 +22,19 @@ const teachers = [
   },
   {
     id: 3,
-    name: "santosh",
+    name: "dinesh",
     subject: "Hindi",
     password: "123",
   },
   {
     id: 4,
-    name: "santosh",
+    name: "vishal",
     subject: "Science",
     password: "123",
   },
   {
     id: 5,
-    name: "santosh",
+    name: "kiran",
     subject: "SocialScience",
     password: "123",
   },
